@@ -6,9 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Office_Analytics</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/Dubai%20Bold.css">
+    <link rel="stylesheet" href="assets/css/Dubai%20Light.css">
+    <link rel="stylesheet" href="assets/css/Dubai%20Medium.css">
+    <link rel="stylesheet" href="assets/css/Dubai%20Regular.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
-    <link rel="stylesheet" href="assets/css/styles.min.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/glightbox.css">
+    <link rel="stylesheet" href="assets/css/avilon.css">
+    <link rel="stylesheet" href="assets/css/extra.css">
+    <link rel="stylesheet" href="assets/css/Bootstrap-4---Timeline.css">
+    <link rel="stylesheet" href="assets/css/email-modal.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Open+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
 </head>
 
@@ -462,7 +472,7 @@
                         <h1 class="cta-title">Kontakt</h1>
                         <p class="cta-text">Haben Sie fragen zu unserem Produkt?&nbsp;<br>Melden Sie sich einfach direkt bei uns per E-Mail.</p>
                     </div>
-                    <div class="col-lg-3 cta-btn-container text-center"><a class="cta-btn align-middle" href="https://solidbase-analytics.com/contact.html" data-bs-toggle="modal" data-bs-target="#fun-modal" data-bs-backdrop="static">Jetzt kontaktieren</a></div>
+                    <div class="col-lg-3 cta-btn-container text-center"><a class="cta-btn align-middle email-link" href="mailto:kontakt@office-analytics.de">E-Mail senden</a></div>
                 </div>
             </div>
         </section>
@@ -550,34 +560,24 @@
             </div>
         </section>
         <section id="contact">
+            <div class="modal fade" role="dialog" tabindex="-1" id="email-modal">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body d-flex flex-column"><span class="spinner-border mx-auto" role="status"></span>
+                            <p class="pt-3">Wir versuchen Ihr E-Mail-Programm zu öffnen....<br>Wenn dies nicht funktioniert, klicken Sie einfach auf die folgende Addresse <span id="copy-span" class="avoidbreak" onclick="document.execCommand(&quot;copy&quot;)" data-bs-content="Addresse kopiert" data-bs-trigger="focus" tabindex="0" data-bs-placement="top">kontakt@office-analytics.com</span>, um sie zu kopieren.</p>
+                            <h1></h1>
+                        </div>
+                        <div class="modal-footer"><button class="btn modal-btn" type="button" data-bs-dismiss="modal">Schließen</button></div>
+                    </div>
+                </div>
+            </div>
             <div class="container" data-aos="fade-up">
                 <div class="row">
-                    <div class="col-lg-4 col-md-4">
+                    <div class="col-6 text">
                         <div class="contact-about">
-                            <h3>Office Analytics</h3>
-                            <p>Haben Sie Fragen zu unserem Produkt. Melden Sie sich einfach direkt bei uns per E-Mail.</p>
+                            <h3>Kontakt</h3>
+                            <p>Haben Sie Fragen zu unserem Produkt? Schreiben Sie uns gerne eine E-Mail an&nbsp;<a class="email-link" href="mailto:kontakt@office-analytics.com">kontakt@office-analytics.com</a>. Wir melden uns schnellstmöglich zurück.</p>
                             <div class="social-links"><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-facebook"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-linkedin"></i></a></div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4">
-                        <div class="info">
-                            <div><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" class="bi bi-geo-alt">
-                                    <path fill-rule="evenodd" d="M12.166 8.94C12.696 7.867 13 6.862 13 6A5 5 0 0 0 3 6c0 .862.305 1.867.834 2.94.524 1.062 1.234 2.12 1.96 3.07A31.481 31.481 0 0 0 8 14.58l.208-.22a31.493 31.493 0 0 0 1.998-2.35c.726-.95 1.436-2.008 1.96-3.07zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"></path>
-                                    <path fill-rule="evenodd" d="M8 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path>
-                                </svg>
-                                <p>Sophienstraße 86 b<br>91052 Erlangen<br></p>
-                            </div>
-                            <div><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" class="bi bi-envelope">
-                                    <path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"></path>
-                                </svg>
-                                <p>kontakt@office-analytics.de</p>
-                            </div>
-                            <div><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" class="bi bi-phone">
-                                    <path fill-rule="evenodd" d="M11 1H5a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"></path>
-                                    <path fill-rule="evenodd" d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"></path>
-                                </svg>
-                                <p>0911 54078131<br><br></p>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -603,7 +603,7 @@
                     <div class="copyright"><span>© Copyright <strong>dicor </strong>&amp;<strong> solidbase Analytics.</strong>&nbsp;All Rights Reserved</span></div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="footer-links text-lg-right text-center pt-2 pt-lg-0"><a class="scrollto" href="#hero">Home</a><a class="scrollto" href="#about">About</a><a href="#">Privacy Policy</a><a href="#">Terms of Use</a></div>
+                    <div class="footer-links text-lg-right text-center pt-2 pt-lg-0"><a class="scrollto" href="#hero">Home</a><a class="scrollto" href="#about">About</a><a href="#">Terms of Use</a></div>
                 </div>
             </div>
         </div>
@@ -612,8 +612,13 @@
         </svg></a>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta2/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script src="assets/js/script.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/avilon.js"></script>
+    <script src="assets/js/email_modal.js"></script>
+    <script src="assets/js/glightbox.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>

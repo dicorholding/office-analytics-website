@@ -1,0 +1,30 @@
+/* The template only applies this to the icons tag <i> but it should be applied to the <svg> tag */
+
+#about .content svg {
+  font-size: 20px;
+  padding-right: 4px;
+  color: #1dc8cd;
+}
+
+/* Changed top offset from -2px to 5px - to center the icon vertically */
+
+#faq .faq-list svg, #faq .faq-list i {
+  font-size: 16px;
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+
+#contact .info svg {
+  font-size: 32px;
+  color: #1dc8cd;
+  float: left;
+  line-height: 0;
+}
+
+/* In Bootstrap Studio you can't just add text to the div, that's why a span was needed - but the padding left shouldn't be applied twice */
+
+span.question {
+  padding-left: 0;
+}
+

@@ -1,0 +1,43 @@
+#copy-span {
+  cursor: pointer;
+  font-family: 'Dubai Regular';
+}
+
+span.avoidbreak {
+  display: inline-block;
+}
+
+#email-modal .modal-btn {
+  background: #515e61;
+  display: inline-block;
+  padding: 6px 30px;
+  border-radius: 20px;
+  color: #fff;
+  transition: none;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Dubai Regular", sans-serif;
+  width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  outline: none;
+}
+
+#email-modal .modal-btn:hover {
+  background: #697174;
+  color: white;
+}
+
+#email-modal .modal-body {
+  padding: 30px 30px;
+}
+
+#email-modal .modal-footer {
+  height: 60px;
+}
+
+#email-modal p {
+  margin-bottom: 0;
+  font-size: 18px;
+}
+
