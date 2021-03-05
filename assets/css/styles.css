@@ -211,7 +211,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/* Office Analytics Section */
+/* OFFICE ANALYTICS SECTION */
 
 .text-div {
   padding: 24px 15px;
@@ -281,7 +281,16 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
 }
 
+/* CONTACT SECTION */
+
 .contact-about {
-  max-width: 800px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .contact-about {
+    text-align: left;
+  }
 }
 
