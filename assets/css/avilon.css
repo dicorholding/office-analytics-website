@@ -369,14 +369,14 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(45deg, rgba(0,119,138,0.5), rgba(29, 200, 205, 0.5)), url("../../assets/img/bgs/office_bg.jpg") center top no-repeat;
+  background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("../../assets/img/bgs/office_bg.jpg") center top no-repeat;
   background-size: cover;
   position: relative;
 }
 
 @media (min-width: 1025px) {
   #hero {
-    background-attachment: fixed;
+    /*background-attachment: fixed;*/
   }
 }
 
@@ -387,31 +387,65 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .hero-text {
-  position: absolute;
+  position: relative;
   left: 0;
-  top: 20vh;
   right: 0;
   height: calc(50% - 60px);
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   text-align: center;
   flex-direction: column;
+  height: 100%;
 }
 
 #hero h2 {
-  margin: 30px 0 10px 0;
+  margin-top: 20%;
   padding: 0 15px;
-  font-size: 48px;
+  font-size: 50px;
   font-weight: 400;
-  line-height: 56px;
+  line-height: 60px;
+  text-transform: uppercase;
   color: #fff;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 576px) {
   #hero h2 {
-    font-size: 28px;
-    line-height: 36px;
+    position: relative;
+    left: 100px;
+    align-self: flex-start;
+    text-align: left;
+    line-height: 80px;
+  }
+}
+
+@media (min-width: 750px) {
+  #hero h2 {
+    position: relative;
+    margin-top: 15%;
+  }
+}
+
+@media (min-width: 950px) {
+  #hero h2 {
+    left: 150px;
+    font-size: 65px;
+    line-height: 120px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #hero h2 {
+    margin-top: 17%;
+    line-height: 130px;
+  }
+}
+
+@media (min-width: 1400px) {
+  #hero h2 {
+    font-size: 70px;
+    line-height: 100px;
+    left: 250px;
   }
 }
 
@@ -419,15 +453,51 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   margin-bottom: 20px;
   padding: 0 15px;
-  font-size: 24px;
+  font-size: 20px;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 400px) {
   #hero p {
-    font-size: 18px;
-    line-height: 24px;
-    margin-bottom: 20px;
-    padding: 0 10px;
+    font-size: 21px;
+    padding: 0 50px;
+  }
+}
+
+@media (min-width: 576px) {
+  #hero p {
+    text-align: left;
+    align-self: flex-end;
+    margin-bottom: 40px;
+    padding: 0 15px;
+  }
+}
+
+@media (min-width: 800px) {
+  #hero p {
+    text-align: left;
+    align-self: flex-end;
+    margin-right: 5%;
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 950px) {
+  #hero p {
+    font-size: 24px;
+    margin-right: 7%;
+  }
+}
+
+@media (min-width: 1100px) {
+  #hero p {
+    margin-right: 10%;
+    font-size: 26px;
+  }
+}
+
+@media (min-width: 1400px) {
+  #hero p {
+    font-size: 30px;
   }
 }
 
