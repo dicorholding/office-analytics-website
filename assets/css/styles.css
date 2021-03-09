@@ -294,3 +294,29 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+/* CALL TO ACTION */
+
+.cta-btn {
+  position: relative !important;
+}
+
+.cta-btn i {
+  position: absolute;
+  font-size: 3rem;
+  left: 20px;
+  top: 20px;
+}
+
+.cta-btn p {
+  padding-left: 60px;
+  margin: auto;
+  font-size: 26px;
+  text-align: left;
+}
+
+/* NAVBAR */
+
+.navbar-toggler:hover {
+  cursor: pointer;
+}
+

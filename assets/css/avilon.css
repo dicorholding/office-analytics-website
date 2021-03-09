@@ -75,11 +75,13 @@ h1, h2, h3, h4, h5, h6 {
 # Header
 -------------------------------------------------------------- */
 
+/* The max-height is only a dirty fix for a graphics glitch when the navbar is expanded - it was expanding too far - so this caps the motion to the height of the header */
+
 #header {
-  height: 90px;
   transition: all 0.5s;
   z-index: 997;
   background: linear-gradient(45deg, var(--prim-col), var(--sec-col));
+  max-height: 365px;
 }
 
 #header.header-transparent {
@@ -88,7 +90,6 @@ h1, h2, h3, h4, h5, h6 {
 
 #header.header-scrolled {
   background: linear-gradient(45deg, rgba(0,119,138,0.9), rgba(29,200,205,0.9));
-  height: 70px;
   transition: all 0.5s;
 }
 
@@ -114,7 +115,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 768px) {
   #header #logo img {
-    max-height: 40px;
+    /*max-height: 40px;*/
   }
 }
 
@@ -125,11 +126,7 @@ h1, h2, h3, h4, h5, h6 {
 /* *
 * Desktop Navigation */
 
-.navbar {
-  padding: 0;
-}
-
-.navbar ul {
+.navbar-avilon ul {
   margin: 0;
   padding: 0;
   display: flex;
@@ -137,36 +134,36 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
 }
 
-.navbar li {
+.navbar-avilon li {
   position: relative;
 }
 
-.navbar > ul > li {
+.navbar-avilon > ul > li {
   white-space: nowrap;
   padding: 10px 0 10px 24px;
 }
 
-.navbar a {
-  display: flex;
+.navbar-avilon a {
+  display: flex !important;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between !important;
   font-family: Dubai Light, "Montserrat", sans-serif;
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 20px;
-  padding: 0 2px;
-  white-space: nowrap;
-  transition: 0.3s;
-  letter-spacing: 0.4px;
-  position: relative;
+  color: rgba(255, 255, 255, 0.8) !important;
+  font-size: 20px !important;
+  padding: 0 2px !important;
+  white-space: nowrap !important;
+  transition: 0.3s !important;
+  letter-spacing: 0.4px !important;
+  position: relative !important;
 }
 
-.navbar a i {
+.navbar-avilon a i {
   font-size: 12px;
   line-height: 0;
   margin-left: 5px;
 }
 
-.navbar > ul > li > a:before {
+.navbar-avilon > ul > li > a:before {
   content: "";
   position: absolute;
   width: 100%;
@@ -179,16 +176,16 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.3s ease-in-out 0s;
 }
 
-.navbar a:hover:before, .navbar li:hover > a:before, .navbar .active:before {
-  visibility: visible;
-  transform: scaleX(1);
+.navbar-avilon a:hover:before, .navbar-avilon li:hover > a:before, .navbar-avilon .active:before {
+  visibility: visible !important;
+  transform: scaleX(1) !important;
 }
 
-.navbar a:hover, .navbar .active, .navbar li:hover > a {
-  color: #fff;
+.navbar-avilon a:hover, .navbar-avilon .active, .navbar-avilon li:hover > a {
+  color: #fff !important;
 }
 
-.navbar .dropdown ul {
+.navbar-avilon .dropdown ul {
   display: block;
   position: absolute;
   left: 24px;
@@ -203,38 +200,50 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s;
 }
 
-.navbar .dropdown ul li {
+@media (max-width: 991px) {
+  .navbar-avilon .dropdown ul {
+    left: -26px;
+  }
+}
+
+.navbar-avilon .dropdown ul li {
   min-width: 200px;
 }
 
-.navbar .dropdown ul a {
-  padding: 10px 20px;
-  font-size: 14px;
-  text-transform: none;
-  color: #333333;
+.navbar-avilon .dropdown ul a {
+  padding: 10px 20px !important;
+  font-size: 16px !important;
+  text-transform: none !important;
+  color: #333334 !important;
 }
 
-.navbar .dropdown ul a i {
+.navbar-avilon .dropdown ul a i {
   font-size: 12px;
 }
 
-.navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
-  color: var(--sec-col);
+.navbar-avilon .dropdown ul a:hover, .navbar-avilon .dropdown ul .active:hover, .navbar-avilon .dropdown ul li:hover > a {
+  color: var(--sec-col) !important;
 }
 
-.navbar .dropdown:hover > ul {
+.dropdown-list-visible {
+  opacity: 1 !important;
+  top: 100% !important;
+  visibility: visible !important;
+}
+
+.navbar-avilon .dropdown:hover > ul {
   opacity: 1;
   top: 100%;
   visibility: visible;
 }
 
-.navbar .dropdown .dropdown ul {
+.navbar-avilon .dropdown .dropdown ul {
   top: 0;
   left: calc(100% - 30px);
   visibility: hidden;
 }
 
-.navbar .dropdown .dropdown:hover > ul {
+.navbar-avilon .dropdown .dropdown:hover > ul {
   opacity: 1;
   top: 0;
   left: 100%;
@@ -242,13 +251,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 1366px) {
-  .navbar .dropdown .dropdown ul {
+  .navbar-avilon .dropdown .dropdown ul {
     left: -90%;
   }
 }
 
 @media (max-width: 1366px) {
-  .navbar .dropdown .dropdown:hover > ul {
+  .navbar-avilon .dropdown .dropdown:hover > ul {
     left: -100%;
   }
 }
@@ -268,12 +277,6 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 991px) {
   .mobile-nav-toggle {
     display: block;
-  }
-}
-
-@media (max-width: 991px) {
-  .navbar ul {
-    display: none;
   }
 }
 
@@ -376,7 +379,6 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 1025px) {
   #hero {
-    /*background-attachment: fixed;*/
   }
 }
 
@@ -931,7 +933,7 @@ section {
   font-size: 20px;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 992px) {
   #call-to-action .cta-btn-container {
     display: flex;
     align-items: center;

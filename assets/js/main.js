@@ -7,3 +7,4 @@ window.letsGo = function () {
     }, 5000)
 }
 $('#fun-modal').on('hidden.bs.modal', letsGo)
+
