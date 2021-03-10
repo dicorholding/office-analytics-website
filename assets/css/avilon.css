@@ -80,8 +80,15 @@ h1, h2, h3, h4, h5, h6 {
 #header {
   transition: all 0.5s;
   z-index: 997;
-  background: linear-gradient(45deg, var(--prim-col), var(--sec-col));
+  background: linear-gradient(45deg, rgba(0,119,138,0.9), rgba(29,200,205,0.9));
+  min-height: 70px;
   max-height: 365px;
+}
+
+@media (max-width: 991px) {
+  #header {
+    background: linear-gradient(45deg, var(--prim-col-alpha), var(--sec-col-alpha));
+  }
 }
 
 #header.header-transparent {
@@ -113,10 +120,15 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   #header #logo img {
-    /*max-height: 40px;*/
+    display: none;
   }
+}
+
+#header.header-scrolled #logo img {
+  display: block !important;
+  transition: display 0.3s;
 }
 
 /* --------------------------------------------------------------
@@ -377,14 +389,12 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 
-@media (min-width: 1025px) {
-  #hero {
-  }
-}
-
-@media (max-height: 640px) {
+@media (max-width: 576px) {
   #hero {
     /*height: 120vh;*/
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("../../assets/img/bgs/office_bg.jpg") center top no-repeat;
+    background-size: cover;
+    padding: 0 30px;
   }
 }
 
@@ -402,7 +412,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero h2 {
-  margin-top: 20%;
+  margin-top: 30%;
   padding: 0 15px;
   font-size: 50px;
   font-weight: 400;
@@ -613,7 +623,7 @@ section {
 -------------------------------- */
 
 .section-bg {
-  background: #eff5f5;
+  background: var(--section-bg);
 }
 
 /* --------------------------------------------------------------
@@ -917,7 +927,7 @@ section {
 
 #call-to-action {
   overflow: hidden;
-  background: linear-gradient(rgba(29, 200, 205, 0.65), rgba(29, 205, 89, 0.2)), url(../../assets/img/call-to-action-bg.jpg) fixed center center;
+  background: linear-gradient(var(--prim-col-alpha), var(--section-bg)), url(../../assets/img/call-to-action-bg.jpg) fixed center center;
   background-size: cover;
   padding: 80px 0;
 }
@@ -941,7 +951,7 @@ section {
   }
 }
 
-#call-to-action .cta-btn {
+.cta-btn {
   font-family: "Dubai Regular", sans-serif;
   font-weight: 500;
   font-size: 18px;
@@ -955,9 +965,21 @@ section {
   color: #fff;
 }
 
-#call-to-action .cta-btn:hover {
-  background: var(--sec-col);
-  border: 2px solid var(--sec-col);
+.cta-btn:hover {
+  background: var(--sec-col-alpha);
+  border: 2px solid var(--sec-col-alpha);
+  color: white;
+}
+
+#contact .cta-btn {
+  background: linear-gradient(45deg, var(--prim-col), var(--sec-col));
+  border: 2px solid linear-gradient(45deg, var(--prim-col), var(--sec-col));
+}
+
+#contact .cta-btn:hover {
+  background: transparent;
+  border: 2px solid var(--sec-col-alpha);
+  color: var(--sec-col);
 }
 
 /* More Features Section

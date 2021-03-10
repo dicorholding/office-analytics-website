@@ -7,6 +7,7 @@
   --sec-col-alpha: rgba(29, 200, 205, 0.8);
   --third-col-alpha: rgba(78,255,239,0.8);
   --acc-col: #912f56;
+  --section-bg: rgba(45,136,139,0.2);
 }
 
 /* FONT SETTINGS */
@@ -291,6 +292,12 @@ h1, h2, h3, h4, h5, h6 {
 @media (min-width: 992px) {
   .contact-about {
     text-align: left;
+  }
+}
+
+@media (max-width: 992px) {
+  #col-contact-btn {
+    display: none;
   }
 }
 
