@@ -48,6 +48,10 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ---------- ROADMAP ---------- */
 
+.no-border {
+  border: 0px;
+}
+
 .col-rm-left {
   border-left: 3px solid;
   border-bottom: 3px solid;
@@ -77,6 +81,9 @@ h1, h2, h3, h4, h5, h6 {
 .col-rm-bottom-to-left {
   border-bottom: 3px solid;
   border-width: 4px;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 0px;
   border-image: linear-gradient(to left, var(--sec-col) 0%, var(--acc-col) 100%);
   border-image-slice: 1;
   margin-right: 0px;
@@ -92,12 +99,14 @@ h1, h2, h3, h4, h5, h6 {
 .col-rm-right {
   border-right: 3px solid;
   border-bottom: 3px solid;
+  border-width: 4px;
+  border-top: 0px;
+  border-left: 0px;
   margin-left: 0px;
   padding-right: 20px;
   padding-bottom: 20px;
   height: 100%;
   border-image: linear-gradient(to right, var(--sec-col) 0%, var(--acc-col) 100%);
-  border-width: 4px;
   border-image-slice: 1;
   display: flex;
   flex-direction: column;
@@ -324,6 +333,16 @@ h1, h2, h3, h4, h5, h6 {
 /* NAVBAR */
 
 .navbar-toggler:hover {
+  cursor: pointer;
+}
+
+/* OTHER */
+
+hide {
+  display: none;
+}
+
+#fun-img:hover {
   cursor: pointer;
 }
 

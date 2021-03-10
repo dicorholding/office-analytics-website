@@ -951,11 +951,3 @@
   transform: perspective(2500px) rotateX(0);
 }
 
-hide {
-  display: none;
-}
-
-#fun-img:hover {
-  cursor: pointer;
-}
-
