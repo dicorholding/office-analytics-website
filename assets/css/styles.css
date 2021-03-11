@@ -14,6 +14,7 @@
 
 body {
   font-family: 'Dubai Light';
+  min-height: 100vh;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -345,5 +346,19 @@ hide {
 
 #fun-img:hover {
   cursor: pointer;
+}
+
+/* IMPRESSUM */
+
+#impressum {
+  padding-top: 110px;
+  padding-bottom: 60px;
+}
+
+#impressum .section-description {
+  text-align: left;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0px 15px;
 }
 
