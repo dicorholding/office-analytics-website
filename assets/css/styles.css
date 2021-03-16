@@ -338,6 +338,18 @@ h1, h2, h3, h4, h5, h6 {
   cursor: pointer;
 }
 
+/* HERO */
+
+.resp-span {
+  display: inline;
+}
+
+@media (min-width: 576px) {
+  .resp-span {
+    display: block;
+  }
+}
+
 /* IMPRESSUM */
 
 #impressum {
