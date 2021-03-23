@@ -407,7 +407,7 @@ h1, h2, h3, h4, h5, h6 {
     /*height: 120vh;*/
     padding: 0 30px;
   }
-  
+
   .webp #hero {
     /*height: 120vh;*/
     background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("../../assets/img/bgs/office_bg-medium.webp") center top no-repeat;
@@ -426,7 +426,7 @@ h1, h2, h3, h4, h5, h6 {
     /*height: 120vh;*/
     padding: 0 30px;
   }
-  
+
   .webp #hero {
     /*height: 120vh;*/
     background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("../../assets/img/bgs/office_bg-small.webp") center top no-repeat;
@@ -651,7 +651,7 @@ section {
   font-size: 20px;
 }
 
-.section-header .section-divider {
+.section-divider {
   display: block;
   width: 60px;
   height: 3px;
@@ -969,6 +969,7 @@ section {
 
 #call-to-action {
   overflow: hidden;
+  background: linear-gradient(var(--prim-col-alpha), var(--section-bg)), url(../../assets/img/bgs/call-to-action-bg.jpg) fixed center center;
   background-size: cover;
   padding: 80px 0;
 }
@@ -995,7 +996,7 @@ section {
   .webp #call-to-action {
     background: linear-gradient(var(--prim-col-alpha), var(--section-bg)), url(../../assets/img/call-to-action-bg-small.webp) fixed center center;
   }
-  
+
   .no-webp #call-to-action {
     background: linear-gradient(var(--prim-col-alpha), var(--section-bg)), url(../../assets/img/call-to-action-bg-small.jpg) fixed center center;
   }
