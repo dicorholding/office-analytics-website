@@ -6,10 +6,18 @@
 .thumbnail-list p {
   font-size: 1rem;
   margin-bottom: 10px;
+  overflow: hidden;
+  max-height: 120px;
+}
+
+@media (min-width: 768px) {
+  .thumbnail-list p {
+    max-height: 72px;
+  }
 }
 
 .thumbnail-list h5 {
-  margin-bottom: 0px;
+  margin-bottom: 5px;
 }
 
 .thumbnail-list li {
@@ -18,7 +26,6 @@
   padding: 10px;
   margin: 50px auto;
   position: relative;
-  height: 180px;
   max-width: 800px;
 }
 
@@ -32,7 +39,7 @@
 .thumbnail-list li:after {
   content: "";
   display: block;
-  width: 400px;
+  width: 80%;
   height: 2px;
   background: var(--acc-col);
   background: linear-gradient(to left, var(--sec-col) 0%, var(--acc-col) 100%);
