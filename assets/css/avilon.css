@@ -25,13 +25,6 @@ p {
   margin: 0 0 30px 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  margin: 0 0 20px 0;
-  padding: 0;
-}
-
 /* --------------------------------------------------------------
 # Back to top button
 -------------------------------------------------------------- */
@@ -105,7 +98,6 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
   margin: 0;
   display: inline-block;
-  font-family: "Montserrat", sans-serif;
   font-weight: 300;
   letter-spacing: 3px;
 }
@@ -163,7 +155,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex !important;
   align-items: center;
   justify-content: space-between !important;
-  font-family: Dubai Light, "Montserrat", sans-serif;
+  font-family: Dubai Light, sans-serif;
   color: rgba(255, 255, 255, 0.8) !important;
   font-size: 20px !important;
   padding: 0 2px !important;
@@ -556,7 +548,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .btn-get-started {
-  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 16px;
   letter-spacing: 1px;
@@ -1232,7 +1223,6 @@ section {
   transition: none;
   font-size: 14px;
   font-weight: 400;
-  font-family: "Montserrat", sans-serif;
   width: fit-content;
   margin: 0 auto;
   margin-bottom: 30px;
@@ -1433,7 +1423,6 @@ section {
   margin: 0 0 10px 0;
   padding: 0;
   line-height: 1;
-  font-family: "Montserrat", sans-serif;
   font-weight: 300;
   letter-spacing: 3px;
   color: var(--sec-col);
@@ -1445,14 +1434,14 @@ section {
   color: #888;
 }
 
-#contact .social-links {
+.social-links {
   padding-bottom: 20px;
 }
 
-#contact .social-links a {
+.social-links a {
   font-size: 18px;
   background: #fff;
-  color: var(--sec-col);
+  color: var(--sec-col) !important;
   padding: 8px 0;
   margin-right: 4px;
   border-radius: 50%;
@@ -1465,13 +1454,14 @@ section {
   justify-content: center;
 }
 
-#contact .social-links a i {
+.social-links a i {
   line-height: 0;
 }
 
-#contact .social-links a:hover {
+.social-links a:hover {
   background: var(--sec-col);
-  color: #fff;
+  color: #fff !important;
+  cursor: pointer;
 }
 
 #contact .info {

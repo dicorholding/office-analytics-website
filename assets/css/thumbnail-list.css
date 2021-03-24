@@ -89,6 +89,7 @@
 .col-img img {
   object-fit: cover;
   height: 160px;
+  max-width: 100%;
 }
 
 .col-content {
