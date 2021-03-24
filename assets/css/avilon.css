@@ -75,7 +75,7 @@ p {
   z-index: 997;
   background: linear-gradient(45deg, rgba(0,119,138,0.9), rgba(29,200,205,0.9));
   min-height: 70px;
-  max-height: 365px;
+  max-height: 406px;
 }
 
 @media (max-width: 991px) {
@@ -116,8 +116,10 @@ p {
   height: 50px;
 }
 
+/* this is a small hack to only apply this on the index page where #index was added to the body tag - this is to avoid having OFFICE ANALYTICS twice on the start page (once in navbar + once in hero) */
+
 @media (max-width: 992px) {
-  #header #logo img {
+  #index #header #logo img {
     display: none;
   }
 }
