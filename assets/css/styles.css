@@ -401,6 +401,11 @@ h1, h2, h3, h4, h5, h6 {
   text-align: left;
 }
 
+.blog-wrapper p {
+  margin: 0;
+  padding: 15px 0;
+}
+
 @media (min-width: 768px) {
   .blog-wrapper {
     font-size: 21px;
@@ -410,18 +415,38 @@ h1, h2, h3, h4, h5, h6 {
 
 .top-section {
   padding-top: 110px;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
 }
 
 .blog-img {
   display: block;
-  max-width: 70%;
-  max-height: 400px;
-  margin: 40px auto;
+  max-width: 90%;
+  max-height: 300px;
+  margin: auto;
   padding: 15px;
+}
+
+@media (min-width: 768px) {
+  .blog-img {
+    max-height: 400px;
+    max-width: 70%;
+    padding: 15px;
+    margin: 10px auto;
+  }
 }
 
 .light-text {
   font-family: 'Dubai Light';
+}
+
+.back-to-blog {
+  position: absolute;
+  left: 0px;
+}
+
+@media (max-width: 767px) {
+  .back-to-blog {
+    display: none !important;
+  }
 }
 
