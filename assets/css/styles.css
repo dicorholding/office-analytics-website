@@ -8,6 +8,7 @@
   --third-col-alpha: rgba(78,255,239,0.8);
   --acc-col: #912f56;
   --section-bg: rgba(45,136,139,0.2);
+  --gal-overlay: rgba(0,0,0,0.5);
 }
 
 /* FONT SETTINGS */
@@ -454,5 +455,73 @@ h1, h2, h3, h4, h5, h6 {
   object-fit: cover;
   width: 100%;
   margin-bottom: 20px;
+}
+
+/* BLOG SECTION on index page */
+
+.gallery-col {
+  padding: 0;
+}
+
+.gallery-item:hover .overlay-div {
+  visibility: visible;
+  background: var(--gal-overlay);
+}
+
+.overlay-div {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  background: rgba(0,0,0,0);
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  visibility: hidden;
+  transition: background ease-in-out 0.4s;
+  transition: visibility ease-in-out 0.1s;
+}
+
+.overlay-div {
+  visibility: visible;
+  background: var(--gal-overlay);
+}
+
+.overlay-div h3 {
+  font-size: 30px;
+  width: 80%;
+  margin: auto;
+}
+
+@media (min-width: 992px) {
+  .overlay-div h3 {
+    font-size: 26px;
+    width: 100%;
+  }
+}
+
+#blog .gallery-item {
+  overflow: hidden;
+  position: relative;
+  padding: 0;
+  vertical-align: middle;
+  text-align: center;
+  height: 250px;
+}
+
+#blog .gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+#blog {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+#blog .gallery-item img {
+  transition: all ease-in-out 0.4s;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
