@@ -21,6 +21,12 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Dubai Regular';
 }
 
+/* ----SURVEY------ */
+
+#survey {
+  margin-top: 8px;
+}
+
 /* ----ABOUT US----- */
 
 .about-us-logos {
