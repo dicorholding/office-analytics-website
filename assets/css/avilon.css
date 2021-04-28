@@ -401,39 +401,42 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 
+
 @media (max-width: 1500px) {
   #hero {
     /*height: 120vh;*/
-    background-size: cover;
     padding: 0 30px;
   }
   
   .webp #hero {
     /*height: 120vh;*/
     background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("../../assets/img/bgs/office_bg-medium.webp") center top no-repeat;
+    background-size: cover;
   }
 
   .no-webp #hero {
     /*height: 120vh;*/
     background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("../../assets/img/bgs/office_bg-medium.jpg") center top no-repeat;
+    background-size: cover;
   }
 }
 
 @media (max-width: 576px) {
   #hero {
     /*height: 120vh;*/
-    background-size: cover;
     padding: 0 30px;
   }
   
   .webp #hero {
     /*height: 120vh;*/
     background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("../../assets/img/bgs/office_bg-small.webp") center top no-repeat;
+    background-size: cover;
   }
 
   .no-webp #hero {
     /*height: 120vh;*/
     background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("../../assets/img/bgs/office_bg-small.jpg") center top no-repeat;
+    background-size: cover;
   }
 }
 
