@@ -8,3 +8,6 @@ window.letsGo = function () {
 }
 $('#fun-modal').on('hidden.bs.modal', letsGo)
 
+window.onload = () => {
+    document.getElementById('involvemeScriptTag').src = 'https://office-analytics.involve.me/embed'
+}
