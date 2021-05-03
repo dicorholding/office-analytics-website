@@ -38,6 +38,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .about-us-logos img {
   height: 90%;
+  width: auto;
   padding: 0 10px;
 }
 
@@ -369,4 +370,3 @@ h1, h2, h3, h4, h5, h6 {
   width: fit-content;
   padding: 0px 15px;
 }
-
