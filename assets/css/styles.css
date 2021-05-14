@@ -230,6 +230,40 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+/* PRODUCTS SECTION */
+
+.products__heading {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.products__heading-product {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+/* CORE */
+.products__heading-product-name {
+  font-size: 26px !important;
+  font-weight: 700 !important;
+  color: #000 !important;
+  margin-bottom: 10px !important;
+}
+
+.products__heading-product-description {
+  font-size: 22px !important;
+  line-height: 24px !important;
+  font-weight: 400 !important;
+  color: #999 !important;
+}
+
+.products__heading-procedure {
+  font-size: 20px !important;
+  font-weight: bold !important;
+}
+
 /* OFFICE ANALYTICS SECTION */
 
 .text-div {
